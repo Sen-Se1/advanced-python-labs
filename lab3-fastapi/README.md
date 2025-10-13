@@ -1,23 +1,38 @@
-# ⚡ Lab 3 – FastAPI  
-**Author:** Houssem Mbarki  
+# 🔥 Lab 3: FastAPI - Modern Web Framework
 
----
+## 📋 Overview
+Learn how to build high-performance APIs with **FastAPI** - a modern, fast web framework for Python.
 
-## 🎯 Objective
-Use **FastAPI** to build a RESTful API using Python.  
-You’ll define routes, validate data with Pydantic models, and explore automatic API documentation with Swagger.
+## 🎯 What You'll Learn
+- Create FastAPI applications with routes
+- Handle HTTP errors and status codes
+- Use Pydantic models for data validation
+- Implement GET and POST endpoints
+- Explore interactive API documentation
+- Compare FastAPI with Flask and Django
 
----
+## 🚀 Quick Start
 
-## 🧠 Key Concepts
-- Building API routes (GET, POST, DELETE)
-- Using Pydantic models for request validation
-- Generating automatic documentation
-- Handling HTTP errors
-- Testing with Swagger UI
-
----
-
-## 🧰 Requirements
 ```bash
+cd lab3-fastapi
 pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+
+Then open:
+- **API Documentation**: http://127.0.0.1:8000/docs
+- **Alternative Docs**: http://127.0.0.1:8000/redoc
+
+## 📁 Files
+- `main.py` - Complete FastAPI application
+- `requirements.txt` - Dependencies
+
+## 💡 Key Features
+- **High Performance** - Async by default
+- **Automatic Docs** - Interactive Swagger UI
+- **Data Validation** - Integrated Pydantic models
+- **Type Hints** - Better IDE support and error checking
+
+---
+
+**Previous:** [Lab 2 - Requests ←](../lab2-requests)
