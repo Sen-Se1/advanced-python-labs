@@ -1,5 +1,5 @@
 print("=" * 50)
-print("PYDANTIC TUTORIAL - COMPLETE WALKTHROUGH")
+print("PYDANTIC TUTORIAL")
 print("=" * 50)
 
 # =============================================================================
