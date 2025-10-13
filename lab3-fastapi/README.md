@@ -9,7 +9,6 @@ Learn how to build high-performance APIs with **FastAPI** - a modern, fast web f
 - Use Pydantic models for data validation
 - Implement GET and POST endpoints
 - Explore interactive API documentation
-- Compare FastAPI with Flask and Django
 
 ## 🚀 Quick Start
 
