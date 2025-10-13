@@ -80,12 +80,6 @@ Then open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 
 ---
 
-## 📎 Submission
-
-Submit your **GitHub or GitLab repository link** on Google Classroom:
-👉 [https://github.com/YourUsername/advanced-python-labs](https://github.com/YourUsername/advanced-python-labs)
-
----
 
 **Houssem Mbarki**
 *Advanced Python — TeknoLabs*
