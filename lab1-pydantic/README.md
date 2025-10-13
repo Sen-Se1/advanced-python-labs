@@ -13,7 +13,7 @@ Learn how to use **Pydantic** to solve Python's dynamic typing problems through 
 
 ```bash
 cd lab1-pydantic
-pip install pydantic
+pip install -r requirements.txt
 python models.py
 ```
 
