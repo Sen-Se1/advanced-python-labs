@@ -81,4 +81,4 @@ Then open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs).
 ---
 
 **Houssem Mbarki**
-*Advanced Python — [TeknoLabs](https://github.com/YourUsername/advanced-python-labs)*
+*Advanced Python — [TeknoLabs](https://docs.teknolabs.net/courses/advanced-python)*
