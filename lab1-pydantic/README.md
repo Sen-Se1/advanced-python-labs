@@ -1,23 +1,32 @@
-# 🧩 Lab 1 – Pydantic  
-**Author:** Houssem Mbarki  
+# 🔥 Lab 1: Pydantic - Data Validation
 
----
+## 📋 Overview
+Learn how to use **Pydantic** to solve Python's dynamic typing problems through data modeling and validation.
 
-## 🎯 Objective
-Learn how to use **Pydantic** for data validation and structured data management in Python.  
-Pydantic ensures that data is parsed and validated before it is used, making your applications more reliable and secure.
+## 🎯 What You'll Learn
+- Create Pydantic models with type hints
+- Validate data automatically
+- Implement custom validation rules
+- Serialize models to/from JSON
 
----
+## 🚀 Quick Start
 
-## 🧠 Key Concepts
-- Creating data models with `BaseModel`
-- Type validation and field constraints
-- Default values and optional fields
-- Custom validators
-- Error handling and serialization
-
----
-
-## 🧰 Requirements
 ```bash
-pip install -r requirements.txt
+cd lab1-pydantic
+pip install pydantic
+python models.py
+```
+
+## 📁 Files
+- `models.py` - Complete tutorial with all examples
+- `requirements.txt` - Dependencies
+
+## 💡 Key Features
+- **Type Validation** - Automatic data type checking
+- **Custom Validators** - Business logic enforcement  
+- **JSON Serialization** - Easy data conversion
+- **Email Validation** - Built-in email format checking
+
+---
+
+**Next:** [Lab 2 - Requests →](../lab2-requests)
