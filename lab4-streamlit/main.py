@@ -4,7 +4,15 @@ import numpy as np
 import matplotlib.pyplot as plt
 import math
 
+# =============================================================================
+#  What is Streamlit?
+# =============================================================================
+
 st.write('Hello World!')
+
+# =============================================================================
+# Using Input Elements
+# =============================================================================
 
 x = st.text_input('Favorite Movie?')
 st.write(f"Your favorite movie is: {x}")
@@ -27,6 +35,10 @@ Two (or more) newline characters in a row will result in a hard return.
 '''
 st.markdown(multi)
 
+# =============================================================================
+# Working with Data
+# =============================================================================
+
 data = pd.read_csv("movies.csv")
 st.write(data)
 
@@ -37,6 +49,10 @@ chart_data = pd.DataFrame(
 
 st.bar_chart(chart_data)
 st.line_chart(chart_data)
+
+# =============================================================================
+# Loan Repayments App
+# =============================================================================
 
 st.title("Mortgage Repayments Calculator")
 
@@ -64,7 +80,6 @@ col1, col2, col3 = st.columns(3)
 col1.metric(label="Monthly Repayments", value=f"${monthly_payment:,.2f}")
 col2.metric(label="Total Repayments", value=f"${total_payments:,.0f}")
 col3.metric(label="Total Interest", value=f"${total_interest:,.0f}")
-
 
 schedule = []
 remaining_balance = loan_amount

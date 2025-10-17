@@ -5,6 +5,11 @@ __pycache__/
 .venv/*
 .env
 
+# Virtual environments (add these)
+myenv/
+env/
+venv/
+
 # Editor
 .vscode/
 .idea/
