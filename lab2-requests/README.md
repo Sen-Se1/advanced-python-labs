@@ -33,3 +33,5 @@ python examples.py
 **Previous:** [Lab 1 - Pydantic ←](../lab1-pydantic)
 
 **Next:** [Lab 3 - FastAPI →](../lab3-fastapi)
+
+---

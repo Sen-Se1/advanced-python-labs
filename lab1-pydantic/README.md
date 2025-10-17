@@ -30,3 +30,5 @@ python models.py
 ---
 
 **Next:** [Lab 2 - Requests →](../lab2-requests)
+
+---

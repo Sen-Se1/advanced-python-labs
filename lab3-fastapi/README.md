@@ -30,8 +30,11 @@ Then open:
 - **High Performance** - Async by default
 - **Automatic Docs** - Interactive Swagger UI
 - **Data Validation** - Integrated Pydantic models
-- **Type Hints** - Better IDE support and error checking
 
 ---
 
 **Previous:** [Lab 2 - Requests ←](../lab2-requests)
+
+**Next:** [Lab 4 - Streamlit →](../lab4-streamlit)
+
+---
