@@ -225,7 +225,8 @@ The current implementation provides foundation for:
 
 ---
 
-**Previous:** [Lab 8 - Crawl4AI ←](../lab8-crawl4ai)  
+**Previous:** [Lab 8 - Crawl4AI ←](../lab8-crawl4ai)
+
 **Next:** [Lab 10 - Machine Learning →](../lab10-machine-learning)
 
 ---

@@ -144,4 +144,6 @@ The Crawl4AI library supports:
 
 **Previous:** [Lab 7 - LangChain ←](../lab7-langchain)
 
+**Next:** [Lab 9 - Llm Fastapi Ollama →](../lab9-llm-fastapi-ollama)
+
 ---
