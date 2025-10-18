@@ -12,6 +12,21 @@ Learn how to build a **FastAPI application with PostgreSQL** database integratio
 
 ## 🚀 Quick Start
 
+### 1. Create Virtual Environment
+```bash
+python -m venv .venv
+```
+
+### 2. Activate Virtual Environment
+```bash
+# Windows
+.venv\Scripts\activate
+
+# macOS/Linux
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies & Run
 ```bash
 cd lab5-fastapi-postgresql
 pip install -r requirements.txt
@@ -80,8 +95,8 @@ URL_DATABASE = 'postgresql://postgres:root@localhost:5432/quizApp'
    ```
 
 3. **Virtual Environment Issues**:
-   - Create: `python -m venv myenv`
-   - Activate: `source myenv/bin/activate` (macOS/Linux) or `myenv\Scripts\activate` (Windows)
+   - Create: `python -m venv .venv`
+   - Activate: `source .venv/bin/activate` (macOS/Linux) or `.venv\Scripts\activate` (Windows)
 
 4. **Module Not Found Errors**:
    - Ensure virtual environment is activated
