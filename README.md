@@ -21,6 +21,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 - **Web Scraping** – for extracting and analyzing data from websites
 - **LangChain** – for building AI applications with large language models
 - **Crawl4AI** – for advanced web crawling and data extraction
+- **LLM Access with FastAPI & Ollama** – for building secure AI APIs with authentication
 
 ---
 
@@ -36,6 +37,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 | **Lab 6** | Web Scraping | Extract and analyze data from websites |
 | **Lab 7** | LangChain | Build AI applications with LLMs and agents |
 | **Lab 8** | Crawl4AI | Advanced web crawling with parallel processing |
+| **Lab 9** | LLM Access with FastAPI & Ollama | Build secure AI APIs with authentication and credit systems |
 
 ---
 
@@ -83,6 +85,12 @@ advanced-python-labs/
 │   ├── single_page_crawl.py
 │   ├── README.md
 │   └── requirements.txt
+├── lab9-llm-fastapi-ollama/
+│   ├── main.py
+│   ├── requirements.txt
+│   ├── Dockerfile
+│   ├── README.md
+│   └── .env (create this file)
 ├── .gitignore
 └── README.md
 ```
@@ -161,6 +169,25 @@ python sequential_crawling.py
 python parallel_crawling.py
 ```
 
+### 🔒 Lab 9 – LLM Access with FastAPI & Ollama
+```bash
+cd lab9-llm-fastapi-ollama
+pip install -r requirements.txt
+
+# Create .env file with your API key
+echo "API_KEY=your_secret_key_here" > .env
+
+# Run the API server
+uvicorn main:app --reload --port 8000
+
+# Test the API (in another terminal)
+curl -X POST "http://localhost:8000/generate?prompt=Hello%20World" -H "x-api-key: your_secret_key_here"
+
+# Or run with Docker
+docker build -t llm-api .
+docker run -p 8000:8000 --env-file .env llm-api
+```
+
 ---
 
 ## 🎯 Course Progression
@@ -172,6 +199,7 @@ python parallel_crawling.py
 6. **Data Extraction** → Master web scraping for data analysis
 7. **AI Applications** → Build intelligent systems with LangChain
 8. **Advanced Crawling** → Master parallel web crawling with Crawl4AI
+9. **Secure AI APIs** → Build authenticated LLM access with FastAPI & Ollama
 
 ---
 
@@ -179,6 +207,7 @@ python parallel_crawling.py
 - Python 3.8+ installed
 - PostgreSQL (for Lab 5)
 - Groq API account (for Lab 7) - free tier available
+- Ollama installed (for Lab 9) - for local LLM access
 - Virtual environment knowledge recommended
 
 ---
