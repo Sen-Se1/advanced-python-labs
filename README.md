@@ -18,6 +18,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 - **FastAPI** – a high-performance framework for building APIs with modern Python  
 - **Streamlit** – for creating interactive web apps for data science and ML
 - **PostgreSQL** – for database integration with FastAPI applications
+- **Web Scraping** – for extracting and analyzing data from websites
 
 ---
 
@@ -30,6 +31,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 | **Lab 3** | FastAPI | Build a RESTful API using FastAPI and Pydantic models |
 | **Lab 4** | Streamlit | Create interactive web apps for data science and ML |
 | **Lab 5** | FastAPI + PostgreSQL | Build a complete Quiz API with database integration |
+| **Lab 6** | Web Scraping | Extract and analyze data from websites |
 
 ---
 
@@ -60,6 +62,10 @@ advanced-python-labs/
 │   ├── main.py
 │   ├── database.py
 │   ├── models.py
+│   ├── README.md
+│   └── requirements.txt
+├── lab6-web-scraping/
+│   ├── scraper.py
 │   ├── README.md
 │   └── requirements.txt
 ├── .gitignore
@@ -107,6 +113,13 @@ uvicorn main:app --reload --port 8000
 ```
 Then open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 
+### 🌐 Lab 6 – Web Scraping
+```bash
+cd lab6-web-scraping
+pip install -r requirements.txt
+python scraper.py
+```
+
 ---
 
 ## 🎯 Course Progression
@@ -115,6 +128,7 @@ Then open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
 3. **Web API Development** → Build FastAPI applications
 4. **Web Applications** → Create interactive Streamlit apps
 5. **Database Integration** → Connect FastAPI with PostgreSQL
+6. **Data Extraction** → Master web scraping for data analysis
 
 ---
 
