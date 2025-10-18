@@ -17,6 +17,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 - **Requests** – for seamless communication with APIs and web services  
 - **FastAPI** – a high-performance framework for building APIs with modern Python  
 - **Streamlit** – for creating interactive web apps for data science and ML
+- **PostgreSQL** – for database integration with FastAPI applications
 
 ---
 
@@ -28,6 +29,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 | **Lab 2** | Requests | Practice sending HTTP requests and interacting with APIs |
 | **Lab 3** | FastAPI | Build a RESTful API using FastAPI and Pydantic models |
 | **Lab 4** | Streamlit | Create interactive web apps for data science and ML |
+| **Lab 5** | FastAPI + PostgreSQL | Build a complete Quiz API with database integration |
 
 ---
 
@@ -52,6 +54,12 @@ advanced-python-labs/
 │   ├── pages/
 │   │   ├── 1_profile.py
 │   │   └── 2_dashboard.py
+│   ├── README.md
+│   └── requirements.txt
+├── lab5-fastapi-postgresql/
+│   ├── main.py
+│   ├── database.py
+│   ├── models.py
 │   ├── README.md
 │   └── requirements.txt
 ├── .gitignore
@@ -91,6 +99,14 @@ pip install -r requirements.txt
 streamlit run main.py
 ```
 
+### 🗄️ Lab 5 – FastAPI + PostgreSQL
+```bash
+cd lab5-fastapi-postgresql
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+Then open [http://127.0.0.1:8000/docs](http://127.0.0.1:8000/docs)
+
 ---
 
 ## 🎯 Course Progression
@@ -98,6 +114,14 @@ streamlit run main.py
 2. **API Communication** → Learn Requests for HTTP interactions  
 3. **Web API Development** → Build FastAPI applications
 4. **Web Applications** → Create interactive Streamlit apps
+5. **Database Integration** → Connect FastAPI with PostgreSQL
+
+---
+
+## 🛠 Prerequisites
+- Python 3.8+ installed
+- PostgreSQL (for Lab 5)
+- Virtual environment knowledge recommended
 
 ---
 
