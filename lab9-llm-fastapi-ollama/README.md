@@ -55,7 +55,7 @@ docker run -p 8000:8000 --env-file .env llm-api
 
 ---
 
-**Previous:** [Lab 8 - Crawl4AI ←](../lab8-crawl4ai)
+**Previous:** [Lab 8 - Crawl4AI ←](../lab8-crawl4AI)
 
 **Next:** [Lab 10 - Machine Learning →](../lab10-machine-learning)
 
