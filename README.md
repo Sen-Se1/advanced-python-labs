@@ -20,6 +20,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 - **PostgreSQL** – for database integration with FastAPI applications
 - **Web Scraping** – for extracting and analyzing data from websites
 - **LangChain** – for building AI applications with large language models
+- **Crawl4AI** – for advanced web crawling and data extraction
 
 ---
 
@@ -34,6 +35,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 | **Lab 5** | FastAPI + PostgreSQL | Build a complete Quiz API with database integration |
 | **Lab 6** | Web Scraping | Extract and analyze data from websites |
 | **Lab 7** | LangChain | Build AI applications with LLMs and agents |
+| **Lab 8** | Crawl4AI | Advanced web crawling with parallel processing |
 
 ---
 
@@ -75,6 +77,12 @@ advanced-python-labs/
 │   ├── README.md
 │   ├── requirements.txt
 │   └── .env (create this file)
+├── lab8-crawl4ai/
+│   ├── parallel_crawling.py
+│   ├── sequential_crawling.py
+│   ├── single_page_crawl.py
+│   ├── README.md
+│   └── requirements.txt
 ├── .gitignore
 └── README.md
 ```
@@ -138,6 +146,21 @@ echo "GROQ_API_KEY=your_actual_api_key_here" > .env
 python langchain_tutorial.py
 ```
 
+### 🕷️ Lab 8 – Crawl4AI
+```bash
+cd lab8-crawl4ai
+pip install -r requirements.txt
+
+# Run single page crawl
+python single_page_crawl.py
+
+# Run sequential crawling
+python sequential_crawling.py
+
+# Run parallel crawling
+python parallel_crawling.py
+```
+
 ---
 
 ## 🎯 Course Progression
@@ -148,6 +171,7 @@ python langchain_tutorial.py
 5. **Database Integration** → Connect FastAPI with PostgreSQL
 6. **Data Extraction** → Master web scraping for data analysis
 7. **AI Applications** → Build intelligent systems with LangChain
+8. **Advanced Crawling** → Master parallel web crawling with Crawl4AI
 
 ---
 

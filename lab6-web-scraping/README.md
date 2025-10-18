@@ -110,6 +110,6 @@ You should see `(.venv)` at the beginning of your command line when activated.
 
 **Previous:** [Lab 5 - FastAPI with PostgreSQL ←](../lab5-fastapi-postgresql)
 
-**Next:** [Lab 7 - Langchain →](../lab7-langchain)
+**Next:** [Lab 7 - LangChain →](../lab7-langchain)
 
 ---

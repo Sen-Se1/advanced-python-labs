@@ -76,4 +76,6 @@ GROQ_API_KEY=your_actual_groq_api_key_here
 
 **Previous:** [Lab 6 - Web Scraping ←](../lab6-web-scraping)
 
+**Next:** [Lab 8 - Crawl4AI →](../lab8-crawl4AI)
+
 ---
