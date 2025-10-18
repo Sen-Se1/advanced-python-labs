@@ -19,6 +19,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 - **Streamlit** – for creating interactive web apps for data science and ML
 - **PostgreSQL** – for database integration with FastAPI applications
 - **Web Scraping** – for extracting and analyzing data from websites
+- **LangChain** – for building AI applications with large language models
 
 ---
 
@@ -32,6 +33,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 | **Lab 4** | Streamlit | Create interactive web apps for data science and ML |
 | **Lab 5** | FastAPI + PostgreSQL | Build a complete Quiz API with database integration |
 | **Lab 6** | Web Scraping | Extract and analyze data from websites |
+| **Lab 7** | LangChain | Build AI applications with LLMs and agents |
 
 ---
 
@@ -68,6 +70,11 @@ advanced-python-labs/
 │   ├── scraper.py
 │   ├── README.md
 │   └── requirements.txt
+├── lab7-langchain/
+│   ├── langchain_tutorial.py
+│   ├── README.md
+│   ├── requirements.txt
+│   └── .env (create this file)
 ├── .gitignore
 └── README.md
 ```
@@ -120,6 +127,17 @@ pip install -r requirements.txt
 python scraper.py
 ```
 
+### 🤖 Lab 7 – LangChain
+```bash
+cd lab7-langchain
+pip install -r requirements.txt
+
+# Create .env file with your Groq API key
+echo "GROQ_API_KEY=your_actual_api_key_here" > .env
+
+python langchain_tutorial.py
+```
+
 ---
 
 ## 🎯 Course Progression
@@ -129,12 +147,14 @@ python scraper.py
 4. **Web Applications** → Create interactive Streamlit apps
 5. **Database Integration** → Connect FastAPI with PostgreSQL
 6. **Data Extraction** → Master web scraping for data analysis
+7. **AI Applications** → Build intelligent systems with LangChain
 
 ---
 
 ## 🛠 Prerequisites
 - Python 3.8+ installed
 - PostgreSQL (for Lab 5)
+- Groq API account (for Lab 7) - free tier available
 - Virtual environment knowledge recommended
 
 ---
