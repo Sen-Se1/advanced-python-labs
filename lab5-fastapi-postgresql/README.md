@@ -99,4 +99,6 @@ URL_DATABASE = 'postgresql://postgres:root@localhost:5432/quizApp'
 
 **Previous:** [Lab 4 - Streamlit ←](../lab4-streamlit)
 
+**Next:** [Lab 6 - Web Scraping →](../lab6-web-scraping)
+
 ---

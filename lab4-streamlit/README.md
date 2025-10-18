@@ -41,6 +41,6 @@ streamlit run main.py
 
 **Previous:** [Lab 3 - FastAPI ←](../lab3-fastapi)
 
-**Next:** [Lab 4 - Fastapi Postgresql →](../lab5-fastapi-postgresql)
+**Next:** [Lab 5 - Fastapi Postgresql →](../lab5-fastapi-postgresql)
 
 ---
