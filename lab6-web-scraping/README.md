@@ -13,6 +13,21 @@ Learn how to extract and analyze data from websites using **Web Scraping** with 
 
 ## 🚀 Quick Start
 
+### 1. Create Virtual Environment
+```bash
+python -m venv .venv
+```
+
+### 2. Activate Virtual Environment
+```bash
+# Windows
+.venv\Scripts\activate
+
+# macOS/Linux
+source .venv/bin/activate
+```
+
+### 3. Install Dependencies & Run
 ```bash
 cd lab6-web-scraping
 pip install -r requirements.txt
@@ -30,31 +45,57 @@ python scraper.py
 - **Trend Analysis** - Count technology mentions in job posts
 - **Data Visualization** - Create bar charts with Matplotlib
 
+## 🗄️ Virtual Environment Setup
+
+### 1. Create Virtual Environment
+```bash
+python -m venv .venv
+```
+
+### 2. Activate Virtual Environment
+```bash
+# Windows (Command Prompt)
+.venv\Scripts\activate
+
+# Windows (PowerShell)
+.venv\Scripts\Activate.ps1
+
+# macOS/Linux
+source .venv/bin/activate
+```
+
+### 3. Verify Activation
+You should see `(.venv)` at the beginning of your command line when activated.
+
 ## 🐛 Troubleshooting
 
 ### Common Issues:
 
-1. **Connection Errors**:
+1. **Virtual Environment Not Working**:
+   - Ensure Python is installed: `python --version`
+   - On Windows, try: `python -m venv .venv --prompt webscraping`
+
+2. **Connection Errors**:
    - Check your internet connection
    - Verify the URL is accessible
    - The Hacker News page structure may have changed
 
-2. **Module Not Found Errors**:
-   - Ensure virtual environment is activated
+3. **Module Not Found Errors**:
+   - Ensure virtual environment is activated (you should see `(.venv)`)
    - Run: `pip install -r requirements.txt`
 
-3. **No Data Found**:
+4. **No Data Found**:
    - The page structure may have changed
    - Check browser developer tools for updated CSS classes
 
-4. **Matplotlib Display Issues**:
+5. **Matplotlib Display Issues**:
    - On servers, use: `plt.savefig('output.png')` instead of `plt.show()`
 
-5. **Rate Limiting**:
-   - Add delays between requests: `time.sleep(1)`
+6. **Rate Limiting**:
+   - Add delays between requests: `import time; time.sleep(1)`
    - Respect robots.txt and terms of service
 
-6. **HTML Parsing Errors**:
+7. **HTML Parsing Errors**:
    - Verify CSS selectors are correct
    - Use browser developer tools to inspect page structure
 
