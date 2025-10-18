@@ -42,23 +42,6 @@ curl -X POST "http://localhost:8000/generate?prompt=Hello%20World" \
 - **⚡ Fast Performance** - Async FastAPI framework with automatic docs
 - **🔧 DevOps Ready** - Environment-based configuration and containerization
 
-## 🔐 API Implementation
-
-### 1. Basic API Server
-```bash
-uvicorn main:app --reload --host 0.0.0.0 --port 8000
-```
-Starts the FastAPI server with automatic documentation at `http://localhost:8000/docs`
-
-### 3. Credit System Test
-```bash
-# Test with valid API key (5 credits initially)
-curl -X POST "http://localhost:8000/generate?prompt=Hello" -H "x-api-key: your_secret_key"
-
-# Test without API key (should fail)
-curl -X POST "http://localhost:8000/generate?prompt=Hello"
-```
-
 ## 🐳 Docker Deployment
 
 ### Build and Run Locally
