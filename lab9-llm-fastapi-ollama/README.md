@@ -15,16 +15,11 @@ Learn to build and secure APIs for Large Language Model access using **FastAPI**
 ## 🚀 Quick Start
 
 ```bash
-# Clone and setup project
-cd llm-api-lab
-
-# Install dependencies
+cd lab9-llm-fastapi-ollama
 pip install -r requirements.txt
 
-# Set up environment variables
+# Create .env file with your API key
 echo "API_KEY=your_secret_key_here" > .env
-
-# Run the API server
 uvicorn main:app --reload
 
 # Test the API (in another terminal)
