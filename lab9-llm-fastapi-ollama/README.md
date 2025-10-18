@@ -50,16 +50,6 @@ uvicorn main:app --reload --host 0.0.0.0 --port 8000
 ```
 Starts the FastAPI server with automatic documentation at `http://localhost:8000/docs`
 
-### 2. API Key Authentication  
-The API uses header-based authentication:
-```python
-def verify_api_key(x_api_key: str = Header(None)):
-    credits = API_KEY_CREDITS.get(x_api_key, 0)
-    if credits <= 0:
-        raise HTTPException(status_code=401, detail="Invalid API Key or No Credits")
-    return x_api_key
-```
-
 ### 3. Credit System Test
 ```bash
 # Test with valid API key (5 credits initially)
