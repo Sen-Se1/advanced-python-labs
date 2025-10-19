@@ -89,6 +89,9 @@ advanced-python-labs/
 │   ├── README.md
 │   └── requirements.txt
 ├── lab9-llm-fastapi-ollama/
+│   ├── .github/
+│   │   └── workflows/
+│   │       └── deploy.yml
 │   ├── main.py
 │   ├── requirements.txt
 │   ├── Dockerfile
