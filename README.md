@@ -95,6 +95,9 @@ advanced-python-labs/
 │   ├── README.md
 │   └── .env (create this file)
 ├── lab10-machine-learning/
+│   ├── .github/
+│   │   └── workflows/
+│   │       └── ci-cd.yml 
 │   ├── MusicRecommender.ipynb
 │   ├── music.csv
 │   ├── music_recommender.joblib
@@ -191,7 +194,7 @@ echo "API_KEY=your_secret_key_here" > .env
 # Run the API server
 uvicorn main:app --reload --port 8000
 
-# Test the API (in another terminal)
+# Test the API locally(in another terminal)
 curl -X POST "http://localhost:8000/generate?prompt=Hello%20World" -H "x-api-key: your_secret_key_here"
 
 # Or run with Docker
@@ -205,11 +208,8 @@ docker run -p 8000:8000 --env-file .env llm-api
 cd lab10-machine-learning
 pip install -r requirements.txt
 uvicorn app:app --reload --port 5000
-```
 
-Test locally:
-
-```bash
+# Test the API locally(in another terminal)
 curl -X POST http://127.0.0.1:5000/predict \
   -H "Content-Type: application/json" \
   -d '{"age": 21, "gender": 1}'
