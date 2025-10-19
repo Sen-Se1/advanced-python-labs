@@ -4,6 +4,7 @@
 ---
 
 ## 🔥 Advanced Python Course Introduction
+
 Welcome to the **Advanced Python** course — a hands-on, project-driven journey designed to elevate your Python skills and unlock the powerful tools used in modern software development, data science, and AI integration.
 
 In this course, we go beyond the basics and explore the Python ecosystem that enables you to build APIs, web applications, automation tools, and intelligent systems with real-world impact.
@@ -22,6 +23,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 - **LangChain** – for building AI applications with large language models
 - **Crawl4AI** – for advanced web crawling and data extraction
 - **LLM Access with FastAPI & Ollama** – for building secure AI APIs with authentication
+- **Machine Learning with FastAPI & Render** – build, deploy, and monitor ML services in the cloud
 
 ---
 
@@ -38,6 +40,7 @@ Throughout the course, you'll dive deep into the following advanced topics:
 | **Lab 7** | LangChain | Build AI applications with LLMs and agents |
 | **Lab 8** | Crawl4AI | Advanced web crawling with parallel processing |
 | **Lab 9** | LLM Access with FastAPI & Ollama | Build secure AI APIs with authentication and credit systems |
+| **Lab 10** | Machine Learning – FastAPI Music Recommender | Train, containerize, automate, and deploy an ML prediction API on Render |
 
 ---
 
@@ -91,6 +94,14 @@ advanced-python-labs/
 │   ├── Dockerfile
 │   ├── README.md
 │   └── .env (create this file)
+├── lab10-machine-learning/
+│   ├── MusicRecommender.ipynb
+│   ├── music.csv
+│   ├── music_recommender.joblib
+│   ├── app.py
+│   ├── Dockerfile
+│   ├── requirements.txt
+│   └── README.md
 ├── .gitignore
 └── README.md
 ```
@@ -188,6 +199,25 @@ docker build -t llm-api .
 docker run -p 8000:8000 --env-file .env llm-api
 ```
 
+### 🎵 Lab 10 – Machine Learning – FastAPI Music Recommender
+
+```bash
+cd lab10-machine-learning
+pip install -r requirements.txt
+uvicorn app:app --reload --port 5000
+```
+
+Test locally:
+
+```bash
+curl -X POST http://127.0.0.1:5000/predict \
+  -H "Content-Type: application/json" \
+  -d '{"age": 21, "gender": 1}'
+```
+
+🌐 **Deployed App:** [https://music-recommender-lab-s22y.onrender.com](https://music-recommender-lab-s22y.onrender.com)
+
+
 ---
 
 ## 🎯 Course Progression
@@ -200,6 +230,7 @@ docker run -p 8000:8000 --env-file .env llm-api
 7. **AI Applications** → Build intelligent systems with LangChain
 8. **Advanced Crawling** → Master parallel web crawling with Crawl4AI
 9. **Secure AI APIs** → Build authenticated LLM access with FastAPI & Ollama
+10. **Machine Learning Deployment** → Build, containerize, and deploy ML apps to Render
 
 ---
 
@@ -208,7 +239,8 @@ docker run -p 8000:8000 --env-file .env llm-api
 - PostgreSQL (for Lab 5)
 - Groq API account (for Lab 7) - free tier available
 - Ollama installed (for Lab 9) - for local LLM access
-- Virtual environment knowledge recommended
+- Render account (for Lab 10)
+- Basic Git and virtual environment knowledge recommended
 
 ---
 
